@@ -17,6 +17,10 @@
         <link href="css/styles.css" rel="stylesheet" />
     </head>
     <body id="page-top">
+
+
+
+
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
             <div class="container">
@@ -37,7 +41,9 @@
                 <div class="masthead-subheading">Learn how to lead from your true self</div>
                 <div class="masthead-heading text-uppercase">Authentic leadership training</div>
                 <div class="masthead-subheading">Stockholm, May 30-Jun 1</div>
-                <a class="btn btn-primary btn-xl text-uppercase" href="#workshops">Sign me up</a>
+                <button type="button" class="btn btn-primary btn-xl text-uppercase" data-bs-toggle="modal" data-bs-target="#signupModal">
+                    Sign me up
+                </button>
             </div>
         </header>
 
@@ -63,7 +69,7 @@
                             
                             
                             
-                            <!-- (what is authentic lieadership)
+                            <!-- (what is authentic leadership)
                                 The Authentic Leadership Training is a course designed to help leaders be themselves and lead from a deeper, more authentic place, in a way that is self-expressive, inspiring and flexible in response to conditions of uncertainty.
 
                             It is a highly-experiential weekend training that has been run for more than 700 participants in 16 cities. The training is adapted to the culture of the group and city in which it is held, and changes during the weekend according to participants’ needs.
@@ -83,21 +89,14 @@
                 <div class="row text-center">
                     <div class="col-md-2">&nbsp;</div>
                     <div class="col-md-8">
-
-
-                        <iframe id="ytplayer" type="text/html" width="640" height="360"
-  src="https://www.youtube.com/embed/mBMprEBOWrE?autoplay=1&origin=http://relationshipyoga.eu"
-  frameborder="0"></iframe>
-<!--
-                        <iframe width="420" height="315"
-                        src="https://www.youtube.com/embed/mBMprEBOWrE">
-                        </iframe> 
--->
-  
                         
+                        <iframe id="ytplayer" type="text/html" width="640" height="360"
+                        src="https://www.youtube.com/embed/mBMprEBOWrE?origin=http://relationshipyoga.eu"
+                        frameborder="0"></iframe>
+                    
                     </div>
                     <div class="col-md-2">&nbsp;</div>
-            </div>
+            </div>  
         </section>
 
         <!-- Services-->
@@ -126,7 +125,7 @@
             </div>
         </section>
 
-        <!-- Contact-->
+        <!-- Contact--> 
         <section class="page-section" id="contact">
             <div class="container">
                 <div class="text-center">
@@ -155,15 +154,12 @@
                     <div class="d-none" id="submitSuccessMessage">
                         <div class="text-center text-white mb-3">
                             <div class="fw-bolder">Form submission successful!</div>
-                            To activate this form, sign up at
-                            <br />
-                            <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
                         </div>
                     </div>
                     <!-- Submit error message-->
                     <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error sending message!</div></div>
                     <!-- Submit Button-->
-                    <div class="text-center"><br /><button class="btn btn-primary btn-xl text-uppercase disabled" id="submitButton" type="submit">Submit</button></div>
+                    <div class="text-center"><br /><button class="btn btn-primary btn-xl text-uppercase enabled" id="submitButton" type="submit">Submit</button></div>
                 </form>
             </div>
         </section>
@@ -187,14 +183,131 @@
             </div>
         </footer>
         -->
+
+
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
-        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-        <!-- * *                               SB Forms JS                               * *-->
-        <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
-        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+
+
+        <!-- Modal -->
+        <div class="modal fade" id="signupModal" tabindex="-1" role="dialog" aria-labelledby="signupModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h5 class="modal-title" id="signupModalLabel">Course signup</h5>
+                <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                </div>
+                <div class="modal-body">
+                    <p>
+                    DATE: 30/5 - 1/6 <br />
+                    TIMES: Mon 9-17, Tue 9-17, Wed 9-17<br />
+                    LOCATION: Klustret Ekskäret<br />
+                    INVESTMENT: 15 600 kr + moms<br /><br />
+                    
+                    INCLUDED
+                    <ul>
+                        <li>3 months free membership to the Connect online platform for Authentic Relating and Circling</li>
+                        <li>Course packet, multiple written manuals and other post-course resources</li>
+                        <li>Meals and snacks to keep energy levels up</li>
+                    </ul>
+
+                    <form action="https://docs.google.com/forms/d/e/1FAIpQLScZ8tozpdIVGYMpIE5E6W3jrWPX0lJG3AF4SE6qqqW-FeCYSQ/formResponse"
+      target="_blank"
+      id="bootstrapForm"
+      method="POST">
+
+
+
+    <!-- Field type: "short" id: "1323714750" -->
+    <fieldset>
+        <legend for="1323714750">Name</legend>
+        <div class="form-group">
+            <input id="276821228" type="text" name="entry.276821228" class="form-control" >
+        </div>
+    </fieldset>
+
+
+    <!-- Field type: "short" id: "835930951" -->
+    <fieldset>
+        <legend for="835930951">Email</legend>
+        <div class="form-group">
+            <input id="973456131" type="text" name="entry.973456131" class="form-control" >
+        </div>
+    </fieldset>
+
+
+    <!-- Field type: "short" id: "1551294457" -->
+    <fieldset>
+        <legend for="1551294457">Organization</legend>
+        <div class="form-group">
+            <input id="1814822762" type="text" name="entry.1814822762" class="form-control" >
+        </div>
+    </fieldset>
+
+    <input type="hidden" name="fvv" value="1">
+    <input type="hidden" name="fbzx" value="-72230159134367739">
+    <!--
+        CAVEAT: In multipages (multisection) forms, *pageHistory* field tells to google what sections we've currently completed.
+        This usually starts as "0" for the first page, then "0,1" in the second page... up to "0,1,2..N" in n-th page.
+        Keep this in mind if you plan to change this code to recreate any sort of multipage-feature in your exported form.
+        We're setting this to the total number of pages in this form because we're sending all fields from all the section together.
+    -->
+    <input type="hidden" name="pageHistory" value="0">
+    <div class="modal-footer">
+                
+        <input class="btn btn-primary" type="submit" value="Submit">
+
+        </div>
+
+    
+</form>
+                    <!--
+
+                        <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLScZ8tozpdIVGYMpIE5E6W3jrWPX0lJG3AF4SE6qqqW-FeCYSQ/formResponse" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate id="mG61Hd" jsmodel="TOfxwf Q91hve CEkLOc" >
+                        
+                        <div class="form-group">
+                            <!-- Email address input
+                            
+                            <input class="form-control" id="email" name="EMAIL" type="email" placeholder="Your Email *" data-sb-validations="required,email" />
+                            
+                            <input type="text" class="whsOnd zHQkBf" jsname="YPqjbf" autocomplete="off" tabindex="0" aria-labelledby="i1" aria-describedby="i2 i3" enabled dir="auto" data-initial-dir="auto" data-initial-value=""/>
+                            <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
+                            <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <input type="checkbox" id="gdpr_147985" name="gdpr[147985]" value="Y" class="av-checkbox gdpr" data-sb-validations="required">
+                            <span class="text-muted">I agree to the the <a href="privacy.html" target="_blank">privacy policy</a>.</span>
+                        </div>
+                    
+
+                        <!-- Submit success message
+                        <div class="d-none" id="submitSuccessMessage">
+                            <div class="text-center text-white mb-3">
+                                <div class="fw-bolder">Form submission successful!</div>
+                            </div>
+                        </div>
+                        <!-- Submit error message
+                        <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error sending message!</div></div>
+                        <!-- Submit Button
+                        <div class="text-center"><br /><button class="btn btn-primary btn-xl text-uppercase enabled" id="submitButton" type="submit">Submit</button></div>
+                    </form>
+
+                    
+                    <!--
+                        Google form stuff
+                        <input type="text" class="whsOnd zHQkBf" jsname="YPqjbf" autocomplete="off" tabindex="0" aria-labelledby="i1" aria-describedby="i2 i3" disabled dir="auto" data-initial-dir="auto" data-initial-value=""/>
+                    <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLScZ8tozpdIVGYMpIE5E6W3jrWPX0lJG3AF4SE6qqqW-FeCYSQ/formResponse" target="_self" method="POST" id="mG61Hd" jsmodel="TOfxwf Q91hve CEkLOc" data-shuffle-seed="9035928171385441945" data-response="%.@.[]]" data-first-entry="0" data-last-entry="3" data-is-first-page="true"></form>
+                    -->
+
+                </p>
+                </div>
+            </div>
+            </div>
+        </div>
     </body>
 </html>
